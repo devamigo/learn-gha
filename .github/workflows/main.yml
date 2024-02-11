@@ -9,4 +9,5 @@ jobs:
     environment: dev
     steps:
       - name: "print env vars"
-        run: echo "The value of deployment server ip is: ${{ vars.DEPLOY_SERVER_IP }}"
+        run: "echo The value of deployment server ip is: ${{ vars.DEPLOY_SERVER_IP }}"
+        
