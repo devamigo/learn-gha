@@ -6,7 +6,7 @@ on:
 jobs:
   greeting_job:
     runs-on: ubuntu-latest
-    environment: dev
+    environment: prod
     steps:
       - name: "print env vars"
         run: "echo The value of deployment server ip is: ${{ vars.DEPLOY_SERVER_IP }}"
