@@ -1,0 +1,12 @@
+name: Greeting on variable day
+
+on:
+  workflow_dispatch
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: "print env vars"
+        run: echo "The value of deployment server ip is: ${{ DEPLOY_SERVER_IP }}"
